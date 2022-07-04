@@ -4,115 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;700&display=swap" rel="stylesheet">
     <title>Registration page</title>
   </head>
   <body>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background: url("./images/bg-intro-desktop.png");
-            background-color: rgb(245, 134, 134);    
-        }
-        .page{
-            display: flex;
-            justify-content:space-between;
-            align-items: center ;
-           
-        }
-        .para{
-            padding-left: 15%;
-            color: #fff;
-           }
-           .form{
-            
-            background-color: #ddd;
-            width: 100%;
-            font-size: 18px;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-           
-           }
-        form#register{
-            margin: 20px;
-           
-        }
-    input#name{
-    padding: 8px;
-    width: 300px;
-    background-color: #fff;
-    border: 1px solid rgba(17, 2, 2, 0.329);
-}
-    input#submit{
-    width: 200px;
-    padding: 7px;
-    justify-items: center;
-    font-size: 10px;
-    font-weight: 600;
-    border: none;
-    border-radius: 3px;
-    background-color: rgb(7, 121, 96);
-    color: #fff;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-}
-form h3{
-    color: #fff;
-    font-size: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-
-}
-    </style>
+   
     <div class="page">
       <div class="para">
-        <h1>Learn to code by <br> watching others</h1>
-        <br><br>
+          <h1>Learn to code by <br> watching others</h1>  
+          <br>  
         <p>
           See how experienced developer solve problems in real-time. <br />
           Watching scripted tutorials is great, but understanding how <br />
           developers think is invaluable.
         </p>
       </div>
-      <div class="form">
-        <form id="register" method="post">
-            <div><h3> <strong>  Try it free 7 days</strong> then $20/mo. thereafter</h3></div>
-          <br /><br />
+          <div class="container">  
+            <div class="head"><span class="title">
+              <strong> Try it free 7 days</strong> then $20/mo. thereafter
+            </span>
+            </div><br>
+        <form>
+          <div class="input-field">
           <input
             type="text"
             name="fname"
             id="name"
             placeholder="First Name"
           />
-          <br /><br />
+        </div>
+          <div class="input-field">
           <input
             type="text"
             name="lname"
             id="name"
             placeholder="Last Name"
           />
-          <br /><br />
+        </div>
+       <div class="input-field">
           <input
             type="email"
             name="email"
             id="name"
             placeholder="Email Address"
           />
-          <br /><br />
+        </div>
+       <div class="input-field">
           <input
             type="password"
             name="password"
             id="name"
             placeholder="Password"
           />
-          <br /><br />
+        </div>
+        <div class="input-field button">
           <input type="submit" value="CLAIM YOUR FREE TRIAL " name="submit" id="submit" />
-      </div>
+        </div>
+        <div class="disclaimer"><small>By clicking the button
+           you are agreeing to our </small><a href="#"><strong> Terms and Services</strong></a></div>
+        </form>
+        </div>
+    </div>
     </div>
   </body>
 </html>
