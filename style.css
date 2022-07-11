@@ -12,6 +12,8 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 60px;
+  width: 100%;
+  height: 100vh;
 }
 .para h1 {
   font-family: "Big Shoulders Display", cursive;
@@ -53,7 +55,6 @@ body {
     6px 6px 20px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
 }
-
 .container form .input-field {
   height: 45px;
   margin-bottom: 20px;
@@ -67,6 +68,42 @@ body {
   border: 1px solid lightgray;
   font-family: "Lexend Deca", sans-serif;
   font-weight: bold;
+}
+.container form .input-field.success input {
+  border-color: #2ecc71;
+}
+.container form .input-field.error input {
+  border-color: #e74c3c;
+}
+.container form .input-field i {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  visibility: hidden;
+}
+.container form .input-field.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.container form .input-field.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.container form .input-field small {
+  visibility: hidden;
+  font-weight: bold;
+  position: absolute;
+}
+.container form .input-field.success small {
+  visibility: hidden;
+  font-weight: bold;
+  position: absolute;
+}
+.container form .input-field.error small {
+  visibility: visible;
+  font-weight: bold;
+  position: absolute;
+  color: #e74c3c;
 }
 
 .container form .button input {
@@ -85,4 +122,11 @@ body {
 .container form .disclaimer a {
   color: hsl(0, 100%, 74%);
   text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .page .para {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="script.js" defer ></script>
+    <script src="https://kit.fontawesome.com/e53071e5f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,44 +25,56 @@
           developers think is invaluable.
         </p>
       </div>
-          <div class="container">  
-            <div class="head"><span class="title">
+      <div class="container">  
+        <div class="head"><span class="title">
               <strong> Try it free 7 days</strong> then $20/mo. thereafter
             </span>
-            </div><br><br>
-        <form>
+        </div><br>
+        <form class="form" id="form">
           <div class="input-field">
           <input
             type="text"
-            name="fname"
-            id="name"
+            name="firstname"
+            id="firstname"
             placeholder="First Name"
-          />
-        </div>
+          />    
+           <i class="fas fa-check-circle"></i>
+           <i class="fas fa-exclamation-circle"></i>
+           <small></small>
+        </div><br>
           <div class="input-field">
           <input
             type="text"
-            name="lname"
-            id="name"
+            name="lastname"
+            id="lastname"
             placeholder="Last Name"
           />
-        </div>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small></small>
+        </div> <br>
        <div class="input-field">
           <input
             type="email"
             name="email"
-            id="name"
+            id="email"
             placeholder="Email Address"
-          />
-        </div>
+          /><br>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small></small>
+        </div><br>
        <div class="input-field">
           <input
             type="password"
             name="password"
-            id="name"
+            id="password"
             placeholder="Password"
-          />
-        </div>
+          /> <br> 
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small></small>
+        </div><br><br>
         <div class="input-field button">
           <input type="submit" value="CLAIM YOUR FREE TRIAL " name="submit" id="submit" />
         </div>
